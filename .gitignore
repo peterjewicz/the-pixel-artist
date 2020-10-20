@@ -1,0 +1,8 @@
+node_modules/
+*.log
+app/platforms/
+dist/
+web/
+app/plugins
+app/node_modules/
+app/www

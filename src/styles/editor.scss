@@ -1,0 +1,110 @@
+#editor {
+
+  #save-popup-wrapper {
+    position: absolute;
+    top: -500px;
+    left: 0;
+    transition: all .5s;
+    background: $darkPurple;
+    color: white;
+    width: 100%;
+    z-index: 5;
+
+    &.active {
+      top: 0px;
+    }
+
+
+    .save-pop-up-wrapper-inner {
+      max-width: 620px;
+      margin: 0 auto;
+      padding: 0 10px;
+      padding-bottom: 25px; // TODO we can remove this if we bring back the text in editor.html
+
+      input {
+        width: 50%;
+        border: 2px solid $lightPurple;
+        padding: 10px;
+        background: none;
+        color: white;
+      }
+
+      button {
+        background: $darkPurple;
+        border: 1px solid $lightPurple;
+        color: white;
+        padding: 8px 10px;
+        cursor: pointer;
+        transition: all .5s;
+        font-size: 1rem;
+        width: 150px;
+        margin: 5px;
+
+        &:hover {
+          background: $medPurple;
+        }
+
+        &:active {
+          background: $medPurple;
+        }
+      }
+
+      #close-save-wrapper {
+        text-align: right;
+        padding: 10px;
+        font-size: 1.25rem;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+
+// Outside the flow
+
+#loading-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: white;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  z-index: 5;
+
+  &.removed {
+    display: none;
+  }
+
+  .fa-spinner {
+    font-size: 4rem;
+    -webkit-animation: rotating 2s linear infinite;
+    -moz-animation: rotating 2s linear infinite;
+    -ms-animation: rotating 2s linear infinite;
+    -o-animation: rotating 2s linear infinite;
+    animation: rotating 2s linear infinite;
+  }
+
+}
+
+
+
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

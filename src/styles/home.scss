@@ -1,0 +1,98 @@
+.home-wrapper {
+
+  font-size: 1.5rem;
+
+
+  button{
+    background: $medPurple;
+    border: 1px solid $lightPurple;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all .5s;
+    font-size: 1.25rem;
+    width: 150px;
+    margin: 5px;
+
+    &:hover {
+      background: $darkPurple;
+    }
+
+    &:active {
+      background: $darkPurple;
+    }
+
+  }
+
+  background: $darkPurple;
+  height: 100vh;
+  width: 100%;
+  color:white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+
+  h1,h2,h3,h4{
+    margin: 0;
+    padding: 0;
+  }
+
+  .text-wrapper {
+    text-align: center;
+    margin-bottom: 55px;
+  }
+
+
+
+  .load-wrapper {
+
+    position: absolute;
+    left: 0;
+    top: -1000px;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    transition: opacity .5s, top 3s .1s;
+    background: rgba(255,255,255,.55);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    &.active {
+      top: 0;
+      opacity: 1;
+      transition: opacity .5s;
+    }
+
+    .load-container {
+      background: $medPurple;
+      width: 90%;
+      max-width: 600px;
+      height: 75%;
+      padding: 5px;
+
+      h2 {
+        border-bottom: 1px solid $lightPurple;
+        padding-bottom: 10px;
+      }
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    #close-load-wrapper {
+      text-align: right;
+      padding: 10px;
+      font-size: 1.25rem;
+      cursor: pointer;
+    }
+
+  }
+
+}

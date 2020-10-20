@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.totalwebconnections.pixelartmaker" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Pixel Art Maker</name>
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        Apache Cordova Team
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <preference name="DisallowOverscroll" value="true" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+    </platform>
+    <icon density="mdpi" height="1024" platform="ios" src="res/icon/ios/icon.png" width="1024" />
+    <icon density="mdpi" height="120" platform="ios" src="res/icon/ios/Icon-60@2x.png" width="120" />
+    <icon density="mdpi" height="114" platform="ios" src="res/icon/ios/icon-57-2x.png" width="114" />
+    <icon density="mdpi" height="57" platform="ios" src="res/icon/ios/icon-57.png" width="57" />
+    <icon density="mdpi" height="144" platform="ios" src="res/icon/ios/icon-72-2x.png" width="144" />
+    <icon density="mdpi" height="72" platform="ios" src="res/icon/ios/icon-72.png" width="72" />
+    <icon density="mdpi" height="180" platform="ios" src="res/icon/ios/Icon-App-60x60@3x.png" width="180" />
+    <icon density="mdpi" height="29" platform="ios" src="res/icon/ios/Icon-App-29x29@1x.png" width="29" />
+    <icon density="mdpi" height="58" platform="ios" src="res/icon/ios/Icon-App-29x29@2x.png" width="58" />
+    <icon density="mdpi" height="87" platform="ios" src="res/icon/ios/Icon-App-29x29@3x.png" width="87" />
+    <icon density="mdpi" height="80" platform="ios" src="res/icon/ios/Icon-App-40x40@2x.png" width="80" />
+    <icon density="mdpi" height="76" platform="ios" src="res/icon/ios/Icon-76.png" width="76" />
+    <icon density="mdpi" height="152" platform="ios" src="res/icon/ios/Icon-76@2x.png" width="152" />
+    <splash height="960" src="res/screen/ios/screen-iphone-portrait-2x.png" width="640" />
+    <splash height="1136" src="res/screen/ios/screen-iphone-portrait-568h-2x.png" width="640" />
+    <splash height="480" src="res/screen/ios/screen-iphone-portrait.png" width="320" />
+    <splash height="2208" src="res/screen/ios/Default-736h.png" width="1242" />
+    <splash height="1334" src="res/screen/ios/Default-667h.png" width="750" />
+    <splash height="2436" src="res/screen/ios/iosxportrait.png" width="1125" />
+    <splash height="320" src="res/screen/ios/screen-iphone-landscape.png" width="480" />
+    <splash height="1536" src="res/screen/ios/screen-ipad-landscape-2x.png" width="2048" />
+    <splash height="768" src="res/screen/ios/screen-ipad-landscape.png" width="1024" />
+    <splash height="2048" src="res/screen/ios/screen-ipad-portrait-2x.png" width="1536" />
+    <splash height="1024" src="res/screen/ios/screen-ipad-portrait.png" width="768" />
+    <splash height="640" src="res/screen/ios/screen-iphone-landscape-2x.png" width="960" />
+    <plugin name="cordova-plugin-whitelist" spec="^1.3.3" />
+    <plugin name="org.devgeeks.Canvas2ImagePlugin" spec="https://github.com/devgeeks/Canvas2ImagePlugin.git" />
+    <plugin name="cordova-plugin-sqlite-2" spec="^1.0.5" />
+    <engine name="ios" spec="^4.5.5" />
+</widget>

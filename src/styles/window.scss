@@ -1,0 +1,62 @@
+html, body, .stage-wrapper {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  overflow-y: hidden;
+  font-size: 16px;
+
+}
+.stage-wrapper{
+  display: flex;
+}
+
+#background-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.options-wrapper{
+  width: 50px;
+  height: 100%;
+  background: $darkPurple;
+  color: white;
+
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    a {
+      color: white;
+    }
+
+    li {
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+      border-bottom: 1px solid $medPurple;
+      transition: all .5s;
+      cursor: pointer;
+
+      &:hover {
+        background: $medPurple;
+      }
+
+      &.active {
+        background: $lightPurple;
+      }
+    }
+  }
+}
+.canvas-wrapper{
+  width: calc(100% - 50px);
+  height: 100%;
+
+  canvas{
+    // width: 100%;
+    // height: 100%;
+  }
+}

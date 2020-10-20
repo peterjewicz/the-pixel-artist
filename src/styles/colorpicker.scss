@@ -1,0 +1,9 @@
+#colorpicker{
+  position: absolute;
+  display: none;
+
+  &.active {
+    display: block;
+    z-index: 5;
+  }
+}

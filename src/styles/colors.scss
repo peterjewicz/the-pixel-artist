@@ -1,0 +1,13 @@
+$darkPurple: #150832;
+$medPurple: #3c2473;
+$lightPurple: #623179;
+
+
+@font-face {
+  font-family: PatrickHand;
+  src: url(../Patrick_Hand/PatrickHand-Regular.ttf);
+}
+
+body {
+  font-family: 'PatrickHand', cursive;
+}
